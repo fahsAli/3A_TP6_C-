@@ -4,7 +4,7 @@
 
 int main(){
     std::srand(time(0));
-    sudoku::Sudoku s(16,sudoku::Complexity::very_easy);
+    sudoku::Sudoku s(9,sudoku::Complexity::very_easy);
     s.generate_grill();
     //s.readFile("sudoku.txt");
     std::cout << s.grille() << std::endl;
